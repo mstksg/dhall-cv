@@ -4,7 +4,7 @@
   , headerSpacing :
       Optional Double
   , theme :
-      Optional Text
+      Optional ./CVTheme.dhall
   , margin :
       Optional Double
   , info :

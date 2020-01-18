@@ -7,6 +7,8 @@
       ./types/CVDocument.dhall a
   , CVPage =
       ./types/CVPage.dhall a
+  , CVTheme =
+      ./types/CVTheme.dhall
   , CVSection =
       ./types/CVSection.dhall a
   , CVCol =
