@@ -5,6 +5,8 @@
       ./types/CVEntry.dhall a
   , CVDocument =
       ./types/CVDocument.dhall a
+  , CVPage =
+      ./types/CVPage.dhall a
   , CVSection =
       ./types/CVSection.dhall a
   , CVCol =
