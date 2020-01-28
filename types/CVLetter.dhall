@@ -1,7 +1,5 @@
   λ(a : Type)
-→ { subtitle :
-      Optional Text
-  , headerSpacing :
+→ { headerSpacing :
       Optional Double
   , theme :
       Optional ./CVTheme.dhall
@@ -11,4 +9,6 @@
       ./CVLetterHeader.dhall a
   , body :
       a
+  , info :
+      ./CVInfo.dhall
   }
