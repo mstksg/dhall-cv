@@ -5,7 +5,7 @@
       Optional ./CVTheme.dhall
   , margin :
       Optional Double
-  , leaderHeader :
+  , letterHeader :
       ./CVLetterHeader.dhall a
   , body :
       a
