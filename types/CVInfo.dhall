@@ -8,6 +8,8 @@
     Text
 , address :
     Text
+, country :
+    Optional Text
 , phone :
     Text
 , email :
