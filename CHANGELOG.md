@@ -7,6 +7,7 @@ v2.1.0
 *April 14, 2022*
 
 *   Export `rawTypes` for the parameterized types
+*   Define functor instances
 
 v2.0.0
 ------
