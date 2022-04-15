@@ -1,1 +1,4 @@
-{ types = ./types.dhall Text, helpers = ./helper/package.dhall }
+{ types = ./types.dhall Text
+, rawTypes = ./types.dhall
+, helpers = ./helper/package.dhall
+}
