@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v2.2.0
+------
+
+*April 21, 2022*
+
+*   New `Markdown` newtype
+*   Change around exports -- `types` is now parameterized, and we have
+    `textTypes` and `markdownTypes` for what used to be there.
+
 v2.1.0
 ------
 

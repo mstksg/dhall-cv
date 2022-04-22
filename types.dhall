@@ -9,4 +9,5 @@
   , CVLetterHeader = ./types/CVLetterHeader.dhall a
   , Teaching = ./types/Teaching.dhall
   , Publication = ./types/Publication.dhall
+  , Markdown = ./types/Markdown.dhall
   }
