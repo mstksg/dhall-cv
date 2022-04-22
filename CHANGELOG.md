@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v2.3.0
+------
+
+*April 22, 2022*
+
+*   Reshuffle entire library to be more parametric, and expect Markdown
+    everywhere instead of Text (or else be parameterized)
+
 v2.2.0
 ------
 

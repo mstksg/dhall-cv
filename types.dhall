@@ -1,13 +1,13 @@
-λ(a : Type) →
-  { CVLine = ./types/CVLine.dhall a
-  , CVEntry = ./types/CVEntry.dhall a
-  , CVDocument = ./types/CVDocument.dhall a
-  , CVPage = ./types/CVPage.dhall a
-  , CVLetter = ./types/CVLetter.dhall a
-  , CVSection = ./types/CVSection.dhall a
-  , CVCol = ./types/CVCol.dhall a
-  , CVLetterHeader = ./types/CVLetterHeader.dhall a
-  , Teaching = ./types/Teaching.dhall
-  , Publication = ./types/Publication.dhall
-  , Markdown = ./types/Markdown.dhall
-  }
+{ CVLine = ./types/CVLine.dhall
+, CVEntry = ./types/CVEntry.dhall
+, CVDocument = ./types/CVDocument.dhall
+, CVPage = ./types/CVPage.dhall
+, CVLetter = ./types/CVLetter.dhall
+, CVSection = ./types/CVSection.dhall
+, CVCol = ./types/CVCol.dhall
+, CVLetterHeader = ./types/CVLetterHeader.dhall
+, CVInfo = ./types/CVInfo.dhall
+, Teaching = ./types/Teaching.dhall
+, Publication = ./types/Publication.dhall
+, Markdown = ./types/Markdown.dhall
+}

@@ -1,13 +1,14 @@
-let types = ../types.dhall Text
+let types = ../types.dhall
 
-in  λ(x : types.Teaching) →
+in  λ(a : Type) →
+    λ(x : types.Teaching) →
       { desc = Some x.year
       , body =
-          types.CVLine.Entry
+          (types.CVLine a).Entry
             { title = x.course
             , institution = Some x.subject
             , location = Some x.institution
             , grade = None Text
-            , body = None Text
+            , body = None a
             }
       }

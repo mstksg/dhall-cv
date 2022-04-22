@@ -7,4 +7,7 @@
 , list =
     https://raw.githubusercontent.com/dhall-lang/dhall-lang/v22.0.0/Prelude/List/package.dhall
       sha256:9354d34f85346a9bfc486e3454b0368c48d7021d926832943ae3f423bce64f83
+, text =
+    https://raw.githubusercontent.com/dhall-lang/dhall-lang/v22.0.0/Prelude/Text/package.dhall
+      sha256:79b671a70ac459b799a53bbb8a383cc8b81b40421745c54bf0fb1143168cbd6f
 }

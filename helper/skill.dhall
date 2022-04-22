@@ -1,10 +1,19 @@
-let types = ../types.dhall Text
+-- | Takes a list of skills (as markdown), intercalates them with commas.
+let types = ../types.dhall
 
-let concatSep =
-      https://raw.githubusercontent.com/dhall-lang/dhall-lang/v9.0.0/Prelude/Text/concatSep
-        sha256:e4401d69918c61b92a4c0288f7d60a6560ca99726138ed8ebc58dca2cd205e58
+let text = (../prelude.dhall).text
 
-in  λ(x : { subject : Text, skills : List Text }) →
+let list = (../prelude.dhall).list
+
+in  λ(x : { subject : Text, skills : List types.Markdown }) →
       { desc = Some x.subject
-      , body = types.CVLine.Simple (concatSep ", " x.skills)
+      , body =
+          (types.CVLine types.Markdown).Simple
+            { rawMarkdown =
+                text.concatMapSep
+                  ", "
+                  types.Markdown
+                  (λ(s : types.Markdown) → s.rawMarkdown)
+                  x.skills
+            }
       }
